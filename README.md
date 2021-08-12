@@ -10,7 +10,6 @@
 
 <template>
   <h2>Flower</h2>
-  <img src="img_white_flower.jpg" width="214" height="204">
 </template>
 
 <script>
