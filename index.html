@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tech Social Admin Panel</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+
+    <!-- custom style  -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <!-- <i class="fas fa-laugh-wink"></i> -->
+                </div>
+                <div class="sidebar-brand-text mx-3">TechSocialize </div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item index">
+                <a class="nav-link" href="index.html"><i class="fas fa-home"></i><span> Dashboard</span></a>
+            </li>
+
+            <li class="nav-item Manage-Socializers">
+                <a class="nav-link " href="Manage-Socializers.html"><i class="fas fa-users"></i><span> Manage Socializers</span></a>
+            </li>
+
+            <li class="nav-item managecompanies">
+                <a class="nav-link" href="managecompanies.html"><i class="fas fa-home"></i><span> Manage Companies</span></a>
+            </li>
+
+            <li class="nav-item pendingapprovel">
+                <a class="nav-link" href="pendingapprovel.html"><i class="fas fa-home"></i><span> Pending Approvals</span></a>
+            </li>
+            <li class="nav-item cloudmessag">
+                <a class="nav-link" href="cloudmessag.html"><i class="fas fa-home"></i><span> Cloud Messaging</span></a>
+            </li>
+
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top nav-shadoow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link  rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                        
+                    </button>
+
+
+                    <ul class="navbar-nav ml-auto">
+
+
+
+
+
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="img-profile rounded-circle " style="box-shadow: rgba(0, 0, 0, 0.25);" src="img/undraw_profile.svg">
+                                <i class="fas fa-sort-down"></i>
+                            </a>
+                            <style>
+                                .shad {
+                                    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+                                }
+                            </style>
+                            <div class="dropdown-menu dropdown-menu-right shad animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="profile.html"> Profile
+                                </a>
+
+                                <a class="dropdown-item" href="appsetting.html"> App Settings</a>
+                                <a class="dropdown-item" href="#"> Log out</a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-1">
+                        <h1 class="h3 mb-0 text-gray-800">Order Stats</h1>
+                    </div>
+
+                    <!-- <div class="row">
+
+                        <div class="col-lg-1"></div>
+
+                        <div class="col-xl-2 col-md-6 mb-4">
+                            <div class="card border-none shadow">
+                                <div class="card-body">
+                                    <div class="row  align-items-center">
+                                        <div class="col ">
+                                            <img src="img/1.png" alt="">
+                                            <div class="text-xs card-title mb-1">
+                                                Total Socializers</div>
+                                            <div class="h5 mb-0 card-qty">500</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-2 col-md-6 mb-4">
+                            <div class="card border-none shadow">
+                                <div class="card-body">
+                                    <div class="row  align-items-center">
+                                        <div class="col ">
+                                            <img src="img/2.png" alt="">
+                                            <div class="text-xs card-title mb-1">
+                                                Total Companies</div>
+                                            <div class="h5 mb-0 card-qty ">458</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-2 col-md-6 mb-4">
+                            <div class="card border-none shadow">
+                                <div class="card-body">
+                                    <div class="row  align-items-center">
+                                        <div class="col">
+                                            <img src="img/3.png" alt="">
+                                            <div class="text-xs card-title mb-1">
+                                                Pending Approvals</div>
+                                            <div class="h5 mb-0 card-qty">42</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-2 col-md-6 mb-4">
+                            <div class="card border-none shadow">
+                                <div class="card-body">
+                                    <div class="row  align-items-center">
+                                        <div class="col">
+                                            <img src="img/4.png" alt="">
+                                            <div class="text-xs card-title mb-1">
+                                                total job posted </div>
+                                            <div class="h5 mb-0 card-qty">20</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-2 col-md-6 mb-4">
+                            <div class="card border-none shadow h-100">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col ">
+                                            <img src="img/5.png" alt="">
+                                            <div class="text-xs card-title mb-1">
+                                                Total Subscriptions</div>
+                                            <div class="h5 mb-0 card-qty ">10</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+                    <div class="row d-flex justify-content-around mb-5">
+                        <div class="order-box">
+                            <div class="card border-none shadow order">
+                                <div class="card-body">
+                                    <div class="row  align-items-center">
+                                        <div class="col ">
+                                            <img src="img/1.png" alt="">
+                                            <div class="text-xs card-title mb-1">
+                                                Total Socializers</div>
+                                            <div class="h5 mb-0 card-qty">500</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-box">
+                            <div class="card border-none shadow order">
+                                <div class="card-body">
+                                    <div class="row  align-items-center">
+                                        <div class="col ">
+                                            <img src="img/2.png" alt="">
+                                            <div class="text-xs card-title mb-1">
+                                                Total Companies</div>
+                                            <div class="h5 mb-0 card-qty ">458</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-box">
+                            <div class="card border-none shadow order">
+                                <div class="card-body">
+                                    <div class="row  align-items-center">
+                                        <div class="col ">
+                                            <img src="img/3.png" alt="">
+                                            <div class="text-xs card-title mb-1">
+                                                Pending Approvals</div>
+                                            <div class="h5 mb-0 card-qty">42</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-box">
+                            <div class="card border-none shadow order">
+                                <div class="card-body">
+                                    <div class="row  align-items-center">
+                                        <div class="col ">
+                                            <img src="img/4.png" alt="">
+                                            <div class="text-xs card-title mb-1">
+                                                total job posted </div>
+                                            <div class="h5 mb-0 card-qty">20</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-box">
+                            <div class="card border-none shadow order">
+                                <div class="card-body">
+                                    <div class="row  align-items-center">
+                                        <div class="col ">
+                                            <img src="img/5.png" alt="">
+                                            <div class="text-xs card-title mb-1">
+                                                Total Subscriptions</div>
+                                            <div class="h5 mb-0 card-qty ">10</div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card shadow mb-4">
+                        <div></div>
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Area Chart</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-area">
+                                <canvas id="myAreaChart"></canvas>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Content Row -->
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+    <script src="js/toggle.js"></script>
+
+
+
+</body>
+
+</html>
