@@ -10,6 +10,7 @@
 
 <template>
   <h2>Flower</h2>
+  <?php echo 'test'; ?>
 </template>
 
 <script>
