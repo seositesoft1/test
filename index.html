@@ -247,6 +247,10 @@
                                     <div class="row  align-items-center">
                                         <div class="col ">
                                             <img src="img/3.png" alt="">
+                                            223523
+
+                                            32
+                                            
                                             <div class="text-xs card-title mb-1">
                                                 Pending Approvals</div>
                                             <div class="h5 mb-0 card-qty">42</div>
@@ -343,7 +347,28 @@
 
     <script src="js/toggle.js"></script>
 
+<script>
+$(function() {
 
+var $list, $newItemForm;
+$list = $('ul');
+$newItemForm = $('#newItemForm');
+
+$newItemForm.on('submit', function(e) {
+  e.preventDefault();
+  var text = $('input:text').val();
+  $list.append('<li>' + text + '</li>');
+  $('input:text').val('');
+});
+
+$list.on('click', 'li', function() {
+  var $this = $(this);
+  $this.remove();
+});
+
+});
+
+</script>
 
 </body>
 
